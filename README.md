@@ -1,7 +1,5 @@
 # Scalable Realtime Voting Application:
 
-**DEMO:** [Link T0 YT](https://www.youtube.com/watch?v=2-DsiAT4-VM)
-
 ## Starting the client(navigate to `/client`):
 
   First, navigate to the `client` direcotory and run the development server:
