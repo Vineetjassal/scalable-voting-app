@@ -124,7 +124,7 @@ const ClientPage = ({ topicName, initialData }: ClientPageProps) => {
               Back to homepage
           </Link>
         </div>
-        <div className="flex gap-4 mr-4 justify-end">
+        <div className="lg:flex hidden gap-4 mr-4 justify-end">
           <Button onClick={handleCopyUrl} className="bg-blue-600 text-white mb-2 sm:mb-2">
             {copyButtonClicked ? <MdDone className="mr-2" /> : <FiShare className="mr-2" />} Share URL
           </Button>
@@ -188,6 +188,14 @@ const ClientPage = ({ topicName, initialData }: ClientPageProps) => {
               </Button>
             </div>
           </div>
+          <div className="flex lg:hidden gap-2 ml-1 mb-10 justify-end">
+          <Button onClick={handleDownloadQRCode} className="bg-white text-black hover:bg-white mb-2 sm:mb-2">
+            <BiQrScan className="mr-2" /> Download QR Code
+          </Button>
+          <Button onClick={handleDownloadExcel} className="mb-2 sm:mb-2">
+            {excelButtonClicked ? <MdDone className="mr-2" /> : <FiDownload className="mr-2" />} Download Excel
+          </Button>
+        </div>
         </MaxWidthWrapper>
       </div>
     </>
