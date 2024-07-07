@@ -3,6 +3,26 @@
   @tailwind utilities;
 
   @layer base {
+    ::-webkit-scrollbar {
+      width: 10px; /* Width of the scrollbar */
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: var(--background); /* Use your color variables or direct colors */
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #c2c2c2;
+      border-radius: 50px; /* Use your color variables or direct colors */
+    }
+  
+    body {
+      scrollbar-width: thin; /* Ensure scrollbar is visible on Firefox */
+      scrollbar-color: var(--primary) var(--background); /* Set scrollbar color and track color */
+    }
+
+
+
     :root {
       --background: 0 0% 100%;
       --foreground: 240 10% 3.9%;
