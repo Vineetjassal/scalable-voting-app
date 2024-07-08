@@ -22,15 +22,15 @@ export default async function Home() {
 
   return (
     <>
-    {/* <Announcement /> */}
+    <Announcement />
     <section className="min-h-screen bg-grid-zinc-50">
       <MaxWidthWrapper className="relative pb-24 pt-10 sm:pb-32 lg:pt-24 xl:pt-30 lg:pb-36">
         <div className="hidden lg:block absolute inset-0 top-8">
           {/* circle */}
         </div>
-        {/* <div className="flex justify-center mt-[-30px] md:mt-0">
+        <div className="flex justify-center mt-[-30px] md:mt-0">
           <Image src={badgeweek} alt={""} width={150} height={150}/>
-        </div> */}
+        </div>
         <div className="hidden md:flex justify-center md:mb-6">
         <Image src={peerlist} alt={""} />
         </div>
