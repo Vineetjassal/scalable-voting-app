@@ -76,7 +76,9 @@ export default async function Home() {
       <TechnologyDisplay />
       <div className="hidden md:block">
       <div className="flex justify-center mb-[120px]">
-      <Image src={homepage} alt={""} className="rounded-2xl shadow-black shadow-2xl" width={1100} height={1100}/>
+      <video autoPlay loop style={{ width: '980px', height: '470px' }} className="shadow-lg shadow-black rounded-lg dark:shadow-white">
+        <source src="/scalablevotingdemo.mp4" />
+      </video>
       </div>
       </div>
       <Companies />
